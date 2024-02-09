@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+ body {
+	 width: 100vw;
+	 height: 100vh;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ p, h1, h2, h3 {
+	 padding: 0;
+	 margin: 0;
+	 color: #333;
+}
+ .chocolate {
+	 position: relative;
+}
+ .package {
+	 position: absolute;
+	 top: -18px;
+	 left: -13px;
+	 width: 741px;
+	 height: 361px;
+	 background: #d71d54;
+	 border-radius: 3px;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 cursor: pointer;
+	 z-index: 10;
+}
+ .package.removed {
+	 left: -200px;
+	 opacity: 0;
+	 transition: left 3s, opacity 1s 2s ease-in-out;
+}
+ .package .package-content {
+	 width: 95%;
+	 height: 90%;
+	 background: #4c2926;
+	 border-radius: 15px;
+	 pointer-events: none;
+}
+ .package h1 {
+	 font-family: 'Berkshire Swash';
+	 font-size: 140px;
+	 color: white;
+	 text-transform: uppercase;
+	 transform: rotate(-20deg) translate(20px, 50px);
+}
+ .package h2 {
+	 font-family: 'Berkshire Swash';
+	 font-size: 100px;
+	 color: #d8c63f;
+	 text-transform: uppercase;
+	 transform: rotate(-20deg) translate(400px, 30px);
+}
+ .chocolate-bar {
+	 width: 735px;
+	 height: 355px;
+	 position: absolute;
+	 top: -15px;
+	 left: -10px;
+	 background: #39160e;
+	 display: flex;
+	 flex-wrap: wrap;
+	 z-index: -1;
+}
+ .chocolate-bar .bar-piece {
+	 width: 20%;
+	 height: 20%;
+	 box-shadow: inset 0px 0px 6px 7px #39160e;
+	 background: #442c28;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ .chocolate-bar .bar-piece span {
+	 display: block;
+	 width: 70%;
+	 height: 50%;
+	 box-shadow: 0px 0px 7px 4px #39160e;
+	 background: #39160e;
+}
+ .golden-ticket {
+	 opacity: 0;
+	 width: 715px;
+	 height: 325px;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 z-index: 5;
+	 background: #ead272;
+	 background-image: radial-gradient(16px, #ead272 100%, transparent), radial-gradient(20px, #333 100%, transparent), radial-gradient(26px, #ead272 100%, transparent), radial-gradient(30px, #333 100%, transparent);
+	 background-size: 65px 65px;
+}
+ .golden-ticket.winner {
+	 opacity: 1;
+}
+ .golden-ticket .golden-ticket-content {
+	 width: 670px;
+	 height: 280px;
+	 background: #ead272;
+	 border: 3px solid #333;
+	 box-sizing: border-box;
+	 padding: 10px 90px;
+}
+ .golden-ticket h1 {
+	 text-transform: uppercase;
+	 font-size: 40px;
+	 text-align: center;
+	 font-family: 'Benne';
+	 margin-top: 5px;
+	 margin-bottom: -5px;
+}
+ .golden-ticket h2 {
+	 text-transform: uppercase;
+	 font-size: 40px;
+	 letter-spacing: 10px;
+	 text-align: center;
+}
+ .golden-ticket h3 {
+	 font-variant: small-caps;
+	 font-size: 25px;
+	 font-weight: 300;
+	 line-height: 0.9;
+}
+ .golden-ticket p {
+	 font-variant: small-caps;
+	 font-weight: bold;
+	 font-size: 18px;
+	 line-height: 0.9;
+	 letter-spacing: -0.5px;
+	 margin: 8px 0;
+}
+ .golden-ticket span {
+	 font-size: 14px;
+	 font-weight: 600;
+	 text-align: center;
+	 display: block;
+	 color: #333;
+}
+ .container {
+	 display: flex;
+}
+ .try-again {
+	 margin-left: 20px;
+	 display: block;
+	 border: none;
+	 color: grey;
+	 cursor: pointer;
+}
+ 
